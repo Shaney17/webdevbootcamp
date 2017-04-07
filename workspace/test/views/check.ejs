@@ -1,0 +1,15 @@
+<% var CorrectID = "Shaney";
+   var CorrectPassword = "121317";
+   
+   if(ID == CorrectID && password == CorrectPassword)
+	{
+		window.open('https://www.facebook.com/LinhShaney','_blank');
+	}
+	else {
+		var error = document.getElementById('errors');
+		error.innerHTML = '	<div class="alert alert-danger">' +
+							'<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' +
+								'<strong>Có lỗi xảy ra: </strong> Đăng nhập không thành công !' +
+							'</div>'
+	}
+%>
